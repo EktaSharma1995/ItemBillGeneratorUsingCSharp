@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -91,25 +91,10 @@ namespace Assignment2
             }
         }
 
-        public double setPrice()
-        {
-            //foreach()
-            if(code.Equals("One"))      //a bill can have more than 1 item so using if
-            {
-                this.price = 10.0;
-            }
-
-            if (code.Equals("Two"))
-            {
-                this.price = 20.0;
-            }
-
-            return price;
-        }
 
         public override string ToString()
         {
-            return "Code:" + code + ", " + "Price:" + setPrice() + ", " + "Quantity:" + quantity + "\n";
+            return "Code:" + code + ", " + "Price:" + Price + ", " + "Quantity:" + quantity + "\n";
         }
 
     }
